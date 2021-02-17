@@ -1,0 +1,17 @@
+body{
+    background: #0a043c;
+}
+.border-custom{
+    border-radius: 10px; 
+}
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-list li {
+    padding: 3em; 
+    margin: .5em; 
+    background: #03506f;
+    border: 2px solid #a3ddcb;
+    
+}
