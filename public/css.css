@@ -13,5 +13,5 @@ body{
     margin: .5em; 
     background: #03506f;
     border: 2px solid #a3ddcb;
-    
+    flex-grow: 1 ;
 }
