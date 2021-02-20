@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import TodosContext from '../context'
+import * as Icon from 'react-feather';
 
 export default function TodoList(){
     const {state, dispatch} = useContext(TodosContext)
@@ -18,11 +19,11 @@ export default function TodoList(){
                             onDoubleClick={() => dispatch({ type: "TOGGLE_TODO", payload: todo })}
                             className={`flex-1 ml-12 cursor-pointer ${todo.complete && "line-through text-black"}`}>{todo.text}</span> 
                            <button>
-                               <img src="https://img.icons8.com/pastel-glyph/344/torch.png" alt="edit icon" className="h-6"/>
+                                <Icon.Edit />
                            </button>
                            <button
                               onClick={() => dispatch({ type: "REMOVE_TODO", payload: todo })}>
-                               <img src="https://img.icons8.com/cotton/344/torch.png" alt="delete icon" className="h-6"/>
+                               <Icon.Delete />
                            </button>
                       </li>  
                 ))}
